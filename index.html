@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
 </head>
 <body>
-    <p>Merry Christmas and Happy New Year</p>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main-content">
+                <section class="section">
+                    <img src="assets/img/cv.jpeg" alt="Profile Photo" class="profile-photo">
+                </section>
+                <section class="section">
+                    <h1 class="profile-name">Borys Buhaienko</h1>
+                </section>
+                <section class="section" id="contacts">
+                    <h2 class="title-text">Contacts</h2>
+                    <ul class="profile-contacts_list text-content">
+                        <li><span class="social-contacts">Tel:</span>+48881393219</li>
+                        <li><span class="social-contacts">E-mail:</span>bugaenko.boris@gmail.com</li>
+                        <li><span class="social-contacts">Diskord:</span>boris#3990</li>
+                        <li><a href="https://www.facebook.com/bugaenko.boris"><span class="social-contacts">Facebook</span></a></li>
+                    </ul>
+                </section>
+                <section class="section" id="summary">
+                    <h2 class="title-text">About Me</h2>
+                    <p class="text-content">I am 32 years old and I want to study Front-End in RSSchool!</p>
+                </section>
+                <section class="section" id="code">
+                    <h2 class="title-text">Code Example</h2>
+                    <pre><code class="text-content">
+function isDivideBy(number, a, b) {
+    if(number % a == 0 && number % b == 0){
+    return true;
+    }else
+    return false;
+}
+                    </code></pre>
+                </section>
+                <section class="section" id="skills">
+                    <h2 class="title-text">Skills</h2>
+                    <ul class="text-content">
+                        <li>HTML(Basic)</li>
+                        <li>CSS/SCSS(Basic)</li>
+                        <li>JS(in proces)</li>
+                    </ul>
+                </section>
+                <section class="section" id="language">
+                    <h2 class="title-text">Language</h2>
+                    <ul class="text-content">
+                        <li>Ukrainian</li>
+                        <li>Russian</li>
+                        <li>Polish (Pre–Intermediate)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="year">2022</p>
+                    <p class="git-name"><a href="https://github.com/06CY" class="git-link">06CY</a></p>
+                </div>
+                <img src="assets/svg/rs_school_js.svg" alt="RSS" class="rss">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
